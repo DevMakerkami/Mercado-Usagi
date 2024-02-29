@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro - MercadoLiebre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/logo-mercado-liebre.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/register.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+</a>
+  </div>
+</header>
+
+<section class="title">
+  <h1>Registro</h1>
+</section>
+
+<main>
+  <form class="registration-form" action="#" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="usuario">Nombre de usuari@:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"  required>
+
+    <label for="domicilio">Domicilio:</label>
+    <input type="text" id="domicilio" name="domicilio" required>
+
+    <label for="perfil-usuario">Perfil del usuario (comprar/vender):</label>
+    <select id="perfil-usuario" name="perfil-usuario" required>
+      <option value="comprar">Comprar</option>
+      <option value="vender">Vender</option>
+    </select>
+    <label>Categorías de interés:</label>
+    <div>
+      <input type="checkbox" id="categoria-electro" name="categorias-interes[]" value="electro">
+      <label for="categoria-electro">Electro</label>
+    </div>
+    <div>
+      <input type="checkbox" id="categoria-moda" name="categorias-interes[]" value="moda">
+      <label for="categoria-moda">Moda</label>
+    </div>
+    <div>
+      <input type="checkbox" id="categoria-hogar" name="categorias-interes[]" value="hogar">
+      <label for="categoria-hogar">Hogar</label>
+    </div>
+    <div>
+      <input type="checkbox" id="categoria-jugueteria" name="categorias-interes[]" value="jugueteria">
+      <label for="categoria-jugueteria">Juguetería</label>
+    </div>
+    <div>
+      <input type="checkbox" id="categoria-vida-sana" name="categorias-interes[]" value="vida-sana">
+      <label for="categoria-vida-sana">Vida Sana</label>
+    </div>
+
+    <label for="foto-usuario">Foto de usuario:</label>
+    <input type="file" id="foto-usuario" name="foto-usuario" accept="image/*">
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmar-password">Confirmar Contraseña:</label>
+    <input type="password" id="confirmar-password" name="confirmar-password" required>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar Datos">
+  </form>
+
+</main>
+
+<footer class="main-footer">
+    <article class="footer-data">
+      <i class="fas fa-credit-card"></i>
+      <h2>Pagá con tarjeta o en efectivo</h2>
+      <p>
+        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+        efectivo en puntos de pago. ¡Y siempre es seguro!
+      </p>
+    </article>
+
+    <article class="footer-data">
+      <i class="fas fa-gift"></i>
+      <h2>Envío gratis desde $ 1.999</h2>
+      <p>
+        Solo por estar registrado en Mercado Liebre tenés envíos gratis en
+        miles de productos. Es un beneficio de Mercado Puntos.
+      </p>
+    </article>
+
+    <article class="footer-data">
+      <i class="fas fa-user-shield"></i>
+      <h2>Seguridad, de principio a fin</h2>
+      <p>
+        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+        hacer, porque estás siempre protegido.
+      </p>
+    </article>
+  </footer>
+</body>
+</html>
